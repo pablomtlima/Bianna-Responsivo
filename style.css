@@ -259,7 +259,7 @@ main .date {
 
 main .date input[type='date'] {
     background: transparent;
-    color: var(var(--color-dark));
+    color: var(--color-dark);
 }
 
 main .insights {
@@ -667,6 +667,11 @@ main .recent-orders a {
     main {
         margin-top: 8rem;
         padding: 0 1rem;
+    }
+
+    main .date input[type='date'] {
+        background: transparent;
+        color: var(--color-dark);
     }
 
     main .recent-orders {
