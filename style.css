@@ -382,9 +382,57 @@ main table tbody tr:last-child td {
 }
 
 main .recent-orders a {
-    text-align: center;
+    text-align: ce;
     display: block;
     margin: 1rem auto;
     color: var(--color-primary);
+    
+}
+/* =============== RIGHT ===============*/
 
+.right {
+    margin-top: 1.4rem;
+}
+
+.right .top {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    background: white;
+}
+
+.right .top button {
+    display: none;
+}
+
+.right .theme-toggle {
+    background: var(--color-ligth);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+.right .theme-toggle span {
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .theme-toggle span.active {
+    background: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius-1);
+}
+
+.right .top .profile {
+    display: flex;
+    gap: 2rem;
+    text-align: right;
 }
