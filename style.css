@@ -670,7 +670,6 @@ main .recent-orders a {
     }
 
     main .date input[type='date'] {
-        background: transparent;
         color: var(--color-dark);
     }
 
