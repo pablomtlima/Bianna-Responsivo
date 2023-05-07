@@ -15,16 +15,28 @@
     --color-primary-variant: #111e88;
     --color-dark-variant: #677483;
     --color-background: #f6f6f9;
-
+    
     --card-border-radius: 2rem;
     --border-radius-1: 0.4rem;
     --border-radius-2: 0.8rem;
     --border-radius-3: 1.2rem;
-
+    
     --card-padding: 1.8rem;
     --padding-1: 1.2;
-
+    
     --box-shadow: 0 2rem 3rem var(--color-ligth);
+}
+
+/* --------------- DARK THEME VARIABLES ---------------*/
+
+.dark-theme-variables {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-ligth: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-ligth);
+    
 }
 
 * {
@@ -605,9 +617,14 @@ main .recent-orders a {
         height: 100vh;
         padding-right: var(--card-padding);
         display: none;
+        animation: showMenu 400ms ease forwards ;
     }
 
-    @keyframes show
+    @keyframes showMenu {
+        to {
+            left: 0;
+        }
+    }
 
     aside .logo {
         margin-left: 1rem;
